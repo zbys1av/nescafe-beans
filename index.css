@@ -1,0 +1,248 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    html{
+        background-color: #fff;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    body{
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    #header-img{
+        background-image: url(images/coffeebeans-1.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    blockquote{
+        text-align: center;
+    }
+
+    #intext{
+        float: right;
+        margin: 10px;
+        width: 220px;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .columns{
+        display: flex;
+        margin-top: 70px;
+    }
+
+    .col{
+        float: left;
+        width: 50%;
+    }
+
+    .col h2{
+        font-size: 25px;
+    }
+
+    #col-1{
+        background-image: url(/images/roasting_beans.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    #col-2{
+        background-image: url(/images/brewing.jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+    }
+
+    .columns::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* .columns div{
+        width: auto;
+    } */
+
+    .columns img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .columns div{
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .slider {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+    }
+  
+    .slides {
+        display: flex;
+        
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .slides::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+    }
+
+    .slides > div {
+        flex-shrink: 0;
+        width: 100%;
+        height: 450px;
+        object-fit: unset;
+        position: relative;
+        display: flex;
+        margin: 10px;
+    }
+
+    #slide-1{
+        background-image: url(/images/coffee-plantation-2.jpg);
+        background-size: cover;
+    }
+
+    #slide-2{
+        background-image: url(/images/dark-beans.jpg);
+        background-size: cover;
+    }
+
+    #slide-3{
+        background-image: url(/images/roasting_2.png);
+        background-size: cover;
+    }
+
+    #slide-4{
+        background-image: url(/images/capsules.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #slide-5{
+        background-image: url(/images/drinking-coffee.jpg);
+        background-size: cover;
+    }
+
+    .slider img {
+        object-fit: cover;
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider > a {
+        display: inline-flex;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: 1px solid #000;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 5px 3px 0 0;
+        position: relative;
+    }
+
+    .slider > a:hover {
+        background: #000;
+    }
+
+    .slider > a:active {
+        top: 1px;
+    }
+
+    .slider > a:focus {
+        background: #000;
+    }
+
+    footer{
+        background: rgb(224, 0, 0);
+        margin-top: 15px;
+        height: 100px;
+    }
+
+    footer div{
+        margin: 10px;
+    }
+
+    a{
+        color: #000;
+        font-weight: 900;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    a:hover{
+        color: rgb(255, 0, 0);
+        transition: 0.5s;
+    }
+
+    .social-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social-links a{
+        /* border: 1px solid black; */
+        /* border-radius: 50%; */
+        margin: 0;
+        padding: 5px;
+        color: #fff;
+        /* background: #fff; */
+    }
+
+    .social h2{
+        font-size: 25px;
+        color: #fff;
+    }
+
+    .social-links a:hover{
+        color: rgb(0, 0, 0);
+        /* background: rgb(255, 150, 150); */
+        /* border: 1px solid #fff; */
+        transition: 0.5s;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .contact a{
+        display: flex;
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    .contact a:hover{
+        color: rgb(224, 0, 0);
+    }
+    
+    #copyright{
+        margin: 25px 0 15px 0;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 13px;
+    }
